@@ -20,22 +20,26 @@
 <body>
 
   <!-- HEADER -->
-  <div id="header"></div>
+  <header id="header"></header>
+
+  <!-- OVERLAY -->
   <div id="overlay" class="overlay"></div>
 
   <!-- CONTENEDOR PRINCIPAL -->
   <div class="layout">
 
     <!-- SIDEBAR -->
-    <div id="sidebar"></div>
+    <aside id="sidebar"></aside>
 
     <!-- CONTENIDO -->
     <main class="main">
-      <h2 class="titulo-seccion">Productos</h2>
+      <section>
+        <h2 class="titulo-seccion">Productos</h2>
 
-      <div class="productos" id="listaProductos">
-        <!-- Productos dinámicos -->
-      </div>
+        <div class="productos" id="listaProductos">
+          <!-- Productos dinámicos -->
+        </div>
+      </section>
     </main>
 
   </div>
@@ -47,17 +51,17 @@
   <div id="modalPago"></div>
 
   <!-- FOOTER -->
-  <div id="footer"></div>
+  <footer id="footer"></footer>
 
   <!-- MINI CARRITO -->
-  <div id="miniCarrito" class="mini-carrito">
+  <div id="miniCarrito" class="mini-carrito" style="display:none;">
     <div class="mini-header">
       <p>Has añadido a tu carro de compras</p>
       <span id="cerrarMini">&times;</span>
     </div>
 
     <div class="mini-body">
-      <img id="miniImg" src="" alt="">
+      <img id="miniImg" src="" alt="Producto agregado">
       <div>
         <p id="miniNombre"></p>
         <small id="miniCodigo"></small>
@@ -68,11 +72,18 @@
     <button id="btnIrCarrito">Ir al carrito 🛒</button>
   </div>
 
+  <!-- MENSAJE SI JS ESTÁ DESACTIVADO -->
+  <noscript>
+    <p style="text-align:center; color:red;">
+      Esta página requiere JavaScript para funcionar correctamente.
+    </p>
+  </noscript>
+
   <!-- SCRIPTS -->
-  <script src="data/productos.js"></script>
-  <script src="assets/js/carrito.js"></script>
-  <script src="assets/js/pago.js"></script>
-  <script src="assets/js/app.js"></script>
+  <script src="data/productos.js" defer></script>
+  <script src="assets/js/carrito.js" defer></script>
+  <script src="assets/js/pago.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
 
 </body>
 </html>
