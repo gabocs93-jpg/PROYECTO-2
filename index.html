@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ImpleStore</title>
 
+  <!-- ICONOS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -17,23 +19,37 @@
 
 <body>
 
+  <!-- HEADER -->
   <div id="header"></div>
   <div id="overlay" class="overlay"></div>
 
+  <!-- CONTENEDOR PRINCIPAL -->
   <div class="layout">
+
+    <!-- SIDEBAR -->
     <div id="sidebar"></div>
 
+    <!-- CONTENIDO -->
     <main class="main">
       <h2 class="titulo-seccion">Productos</h2>
-      <div class="productos" id="listaProductos"></div>
+
+      <div class="productos" id="listaProductos">
+        <!-- Productos dinámicos -->
+      </div>
     </main>
+
   </div>
 
+  <!-- MODAL CARRITO -->
   <div id="modalCarrito"></div>
+
+  <!-- MODAL PAGO -->
   <div id="modalPago"></div>
 
+  <!-- FOOTER -->
   <div id="footer"></div>
 
+  <!-- MINI CARRITO -->
   <div id="miniCarrito" class="mini-carrito">
     <div class="mini-header">
       <p>Has añadido a tu carro de compras</p>
@@ -52,6 +68,7 @@
     <button id="btnIrCarrito">Ir al carrito 🛒</button>
   </div>
 
+  <!-- SCRIPTS -->
   <script src="data/productos.js"></script>
   <script src="assets/js/carrito.js"></script>
   <script src="assets/js/pago.js"></script>

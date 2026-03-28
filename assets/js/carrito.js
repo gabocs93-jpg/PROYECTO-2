@@ -114,7 +114,7 @@ function renderizarCarrito() {
 
   contenedor.innerHTML = "";
 
-  /* 🔥 CARRITO VACÍO */
+  /* CARRITO VACÍO */
   if (carrito.length === 0) {
     contenedor.innerHTML = `
       <div style="text-align:center; padding:30px;">
@@ -131,15 +131,15 @@ function renderizarCarrito() {
 
     if (btnPagar) btnPagar.style.display = "none";
     if (btnHome) btnHome.style.display = "block";
-    if (btnSeguir) btnSeguir.style.display = "none"; // 🔥 ocultar
+    if (btnSeguir) btnSeguir.style.display = "none"; //  ocultar
 
     return;
   }
 
-  /* 🔥 SI HAY PRODUCTOS */
+  /* SI HAY PRODUCTOS */
   if (btnPagar) btnPagar.style.display = "block";
   if (btnHome) btnHome.style.display = "none";
-  if (btnSeguir) btnSeguir.style.display = "block"; // 🔥 mostrar
+  if (btnSeguir) btnSeguir.style.display = "block"; // mostrar
 
   let total = 0;
 
@@ -173,7 +173,7 @@ function renderizarCarrito() {
     contenedor.appendChild(div);
   });
 
-  /* 🔥 CÁLCULOS */
+  /*  CÁLCULOS */
   const subtotal = total / 1.18;
   const igv = total - subtotal;
 
@@ -183,7 +183,7 @@ function renderizarCarrito() {
 }
 
 /* =========================
-   MINI CARRITO ANIMADO 🔥
+   MINI CARRITO ANIMADO 
 ========================= */
 function mostrarMiniCarrito(producto) {
   const modal = document.getElementById("miniCarrito");
