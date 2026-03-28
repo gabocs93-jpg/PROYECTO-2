@@ -1,0 +1,49 @@
+<div id="carritoModal" class="modal">
+  <div class="modal-contenido carrito-pro">
+
+    <!-- IZQUIERDA -->
+    <div class="carrito-lista">
+      <h2>🛒 Carro de compra</h2>
+
+      <!-- CONTENEDOR DINÁMICO -->
+      <div id="carritoItems"></div>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="carrito-resumen">
+      <h3>Resumen de tu compra</h3>
+
+      <div class="resumen-linea">
+        <span>Subtotal</span>
+        <span>S/ <span id="subtotal">0.00</span></span>
+      </div>
+
+      <div class="resumen-linea">
+        <span>IGV (18%)</span>
+        <span>S/ <span id="igv">0.00</span></span>
+      </div>
+
+      <div class="resumen-total">
+        <strong>Total</strong>
+        <strong>S/ <span id="carritoTotal">0.00</span></strong>
+      </div>
+
+      <!-- BOTÓN PAGAR -->
+      <button id="btnIrPagar" class="btn-comprar">
+        Ir a comprar
+      </button>
+
+      <!--  BOTÓN SEGUIR COMPRANDO -->
+      <button id="btnSeguirComprando" class="btn-seguir">
+        Seguir comprando
+      </button>
+
+      <!-- BOTÓN HOME (CUANDO ESTÁ VACÍO) -->
+      <button id="btnIrHome" class="btn-home" style="display:none;">
+        Ir al inicio
+      </button>
+
+    </div>
+
+  </div>
+</div>

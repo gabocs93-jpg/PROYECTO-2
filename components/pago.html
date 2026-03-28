@@ -1,0 +1,30 @@
+<div id="pagoModal" class="modal">
+  <div class="modal-contenido">
+
+    <!-- HEADER -->
+    <div class="modal-header">
+      <h2>💳 Finalizar compra</h2>
+      <span id="cerrarPago" class="cerrar">&times;</span>
+    </div>
+
+    <!-- RESUMEN -->
+    <div class="pago-resumen">
+      <h3>Total a pagar</h3>
+      <h2>S/ <span id="totalPago">0.00</span></h2>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="pago-form">
+      <input id="nombre" type="text" placeholder="Nombre completo">
+      <input id="tarjeta" type="text" placeholder="Número de tarjeta">
+      <input id="fecha" type="text" placeholder="MM/AA">
+      <input id="cvv" type="text" placeholder="CVV">
+
+      <!--  MENSAJE ERROR -->
+      <p id="errorPago" class="error-pago"></p>
+
+      <button id="btnConfirmarPago">Pagar ahora</button>
+    </div>
+
+  </div>
+</div>

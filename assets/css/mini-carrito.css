@@ -1,0 +1,34 @@
+.mini-carrito {
+  position: fixed;
+  top: 80px;
+  right: -350px;
+  width: 320px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 15px;
+  z-index: 2000;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.mini-carrito.activo {
+  right: 20px;
+  opacity: 1;
+}
+
+.mini-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mini-body {
+  display: flex;
+  gap: 10px;
+}
+
+.mini-body img {
+  width: 60px;
+}
